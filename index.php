@@ -1,20 +1,6 @@
 <?php
-session_start();
-include('includes/config.php');
-if(isset($_POST['submit']))
-{
+include "includes/config.php";
 
-$fname=$_POST['fname'];
-$lname=$_POST['lname'];
-$email=$_POST['email'];
-$phoneNo=$_POST['phoneNo'];
-$message=$_POST['message'];
-$query="insert into  contactForm(fname,lname,email,phoneNo,message) values(?,?,?,?,?)";
-$stmt = $mysqli->prepare($query);
-$rc=$stmt->bind_param('sssss',$fname,$lname,$email,$phoneNo,$message);
-$stmt->execute();
-echo"<script>alert('Message Sent');</script>";
-}
 ?>
 
 <!DOCTYPE html>
@@ -188,7 +174,7 @@ include('includes/header.php');
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="includes/form.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your First Name</label>
@@ -217,7 +203,7 @@ include('includes/header.php');
                 <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
                 <div class="validate"></div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button name = "submit" type="submit">Send Message</button></div>
             </form>
           </div>
 
