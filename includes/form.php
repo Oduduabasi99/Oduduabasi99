@@ -1,19 +1,17 @@
 <?php
 include "config.php";
 if(isset($_POST['submit'])){
-    $fname = $_REQUEST['fname'];
-    $lname = $_REQUEST['lname'];
+    $name = $_REQUEST['name'];
     $email = $_REQUEST['email'];
-    $no = $_REQUEST['phoneNo'];
+    $subject= $_REQUEST['subject'];
     $message = $_REQUEST['message'];
 }
 
-
-$query = "INSERT INTO contactForm(fname, lname, email, phoneNo, message) VALUES ('$fname', '$lname', '$email', '$no', '$message')";
+$query = "INSERT INTO contactForm(name, email, subject, message) VALUES ('$name', '$email', '$subject', '$message')";
 $result = mysqli_query($conn, $query);
 if(!$result){
     die("could not submit to database" . mysqli_error($conn));
 }else{
-    echo "Submitted successfully";
+    echo '<script> alert ("Submitted successfully");</script>';
 }
 ?>

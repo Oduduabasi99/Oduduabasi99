@@ -174,36 +174,26 @@ include('includes/header.php');
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="includes/form.php" method="post" role="form" class="php-email-form">
+             <form action="includes/form.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your First Name</label>
-                  <input type="text" name="fname" class="form-control" id="fname" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required />
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Last Name</label>
-                  <input type="text" name="lname" class="form-control" id="lname" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email"required />
                 </div>
               </div>
-              
               <div class="form-group">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              <div class="form-group">
-                <label for="name">Phone Number</label>
-                <input type="text" class="form-control" name="phoneNo" id="phoneNo" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required />
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
-              <div class="text-center"><button name = "submit" type="submit">Send Message</button></div>
+              <div class="text-center"><button name="submit" type="submit">Send Message</button></div>
             </form>
           </div>
 
@@ -216,7 +206,7 @@ include('includes/header.php');
 
   <!-- ======= Footer ======= -->
   <?php
-  include('includes/footer.php');
+  include 'includes/footer.php';
   ?>
   <!-- End  Footer -->
 
