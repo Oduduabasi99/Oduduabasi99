@@ -12,6 +12,7 @@ $result = mysqli_query($conn, $query);
 if(!$result){
     die("could not submit to database" . mysqli_error($conn));
 }else{
-    echo '<script> alert ("Submitted successfully");</script>';
+    echo '<script> alert ("Message Sent!!!");
+    window.location.href="../index.php";</script>';
 }
 ?>

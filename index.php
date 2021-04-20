@@ -191,7 +191,7 @@ include('includes/header.php');
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea type="text" class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="text-center"><button name="submit" type="submit">Send Message</button></div>
             </form>
