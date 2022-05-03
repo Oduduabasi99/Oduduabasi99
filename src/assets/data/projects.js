@@ -11,7 +11,7 @@ const projects = [
     desc:
       'An ecommerce application with stunning disign and many features using ReactJS',
     img: Project1,
-    link: '',
+    link: 'https://github.com/Oduduabasi99/reactEcom',
   },
   {
     id: uuidv4(),
@@ -19,7 +19,7 @@ const projects = [
     desc:
       'A single page portfolio app using ReactJS that can be switch between dark and light theme.',
     img: Project2,
-    link: ' https://github.com/Oduduabasi99/portfolio-designs/pull/new/first',
+    link: 'https://github.com/Oduduabasi99/portfolio-designs/tree/first',
   },
   {
     id: uuidv4(),
@@ -27,14 +27,14 @@ const projects = [
     desc:
       'A simple note app using ReactJS that has many features such as dark and light theme, search filters, etc',
     img: Project3,
-    link: '',
+    link: 'https://github.com/Oduduabasi99/reactJS-notes-app/tree/master',
   },
   {
     id: uuidv4(),
     name: 'Portfolio',
     desc: 'A simple portfolio. The portfolio is made using ReactJs.',
     img: Project4,
-    link: '',
+    link: 'https://github.com/Oduduabasi99/portfolio-designs/tree/second',
   },
 ];
 

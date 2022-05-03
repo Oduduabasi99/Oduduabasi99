@@ -106,7 +106,7 @@ export default function About() {
               </div>
               <Button
                 btnText="Download CV"
-                download="OduduIsong cv.pdf"
+                download="oduduisong.pdf"
                 btnLink={Resume}
               />
             </div>
